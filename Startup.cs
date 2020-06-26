@@ -41,7 +41,7 @@ namespace akvwebapp
             Mode = RetryMode.Exponential
          }
             };
-            var client = new SecretClient(new Uri("https://<your-unique-key-vault-name>.vault.azure.net/"), new DefaultAzureCredential(), options);
+            var client = new SecretClient(new Uri("https://DorisKey2.vault.azure.net/"), new DefaultAzureCredential(), options);
 
             KeyVaultSecret secret = client.GetSecret("mySecret");
 
